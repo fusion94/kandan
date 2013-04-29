@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   extend Enumerize
+  has_paper_trail
 
   # Being pesimistic here and making the default waiting for approval for security reasons
   enumerize :registration_status, in: [:active, :suspended, :waiting_approval], :default => :waiting_approval

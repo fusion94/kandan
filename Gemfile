@@ -13,6 +13,9 @@ gem 'pg'
 gem 'devise'
 gem 'cancan'
 
+gem 'paper_trail'
+gem 'paper_trail_manager', :git => 'git://github.com/fusion94/paper_trail_manager.git'
+
 # Server/transport gems
 gem 'thin'
 gem 'faye'

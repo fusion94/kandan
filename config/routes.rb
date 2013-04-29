@@ -5,7 +5,7 @@ Kandan::Application.routes.draw do
   }
 
   root :to => "main#index"
-
+resources :changes, :controller => 'paper_trail_manager/changes'
   get '/search' => "main#search"
 
   resources :channels do

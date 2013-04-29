@@ -1,7 +1,8 @@
 class Attachment < ActiveRecord::Base
   belongs_to :channel
   belongs_to :user
-
+  has_paper_trail
+  
 =begin
   has_attached_file(:file, {
       :storage         => :s3,
